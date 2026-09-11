@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lumin ipskill · 一键安装</title>
+<style>
+:root{--ink:#172033;--muted:#64748b;--blue:#2563eb;--deep:#173b8f;--line:#dbe5f2;--paper:#fff;--bg:#f5f8fc;--green:#0f9f6e}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 system-ui,-apple-system,"Segoe UI","Microsoft YaHei",sans-serif}a{color:var(--blue)}
+.hero{color:#fff;background:radial-gradient(circle at 80% 10%,#4c8dff 0,transparent 35%),linear-gradient(135deg,var(--deep),#2563eb);padding:64px 20px 76px}.hero-inner,.main,.footer{max-width:1080px;margin:auto}.eyebrow{font-size:13px;letter-spacing:.18em;opacity:.8}.hero h1{font-size:clamp(36px,6vw,64px);line-height:1.1;margin:14px 0}.hero p{max-width:700px;font-size:19px;opacity:.94}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{border-radius:12px;padding:12px 20px;text-decoration:none;font-weight:700;display:inline-block}.btn-primary{background:#fff;color:#1745a0;box-shadow:0 8px 22px #0c2d7a55}.btn-ghost{border:1px solid #ffffff80;color:#fff}.main{padding:34px 20px 70px}.panel{background:var(--paper);border:1px solid var(--line);border-radius:20px;box-shadow:0 10px 28px #18315d0b;padding:28px;margin-bottom:20px}.panel h2{margin:0 0 8px;font-size:25px}.sub{color:var(--muted);margin-top:0}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:22px}.step{padding:20px;border-radius:16px;background:linear-gradient(180deg,#f8fbff,#eef5ff);border:1px solid #dceaff}.step b{display:flex;align-items:center;gap:10px;font-size:18px}.num{display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--blue);color:#fff}.profiles{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:20px}.profile{border:1px solid var(--line);border-radius:15px;padding:18px;background:#fff}.profile strong{display:block;font-size:20px;color:var(--blue);margin-bottom:4px}.profile p{color:var(--muted);font-size:14px;margin:0}.tip{margin-top:18px;border-left:4px solid var(--green);background:#effbf6;padding:12px 16px;border-radius:10px}.faq{display:grid;grid-template-columns:1fr 1fr;gap:12px}.faq details{border:1px solid var(--line);border-radius:12px;padding:13px 16px;background:#fbfdff}.faq summary{cursor:pointer;font-weight:700}.guide summary{cursor:pointer;color:var(--blue);font-weight:700;font-size:18px}.guide-content{margin-top:18px;border-top:1px solid var(--line);padding-top:14px}.guide-content h1,.guide-content h2{color:var(--deep);line-height:1.3;margin-top:1.7em}.guide-content pre{overflow:auto;background:#101827;color:#e8f0ff;padding:16px;border-radius:10px}.guide-content code{background:#eef2f7;padding:2px 5px;border-radius:4px}.guide-content table{border-collapse:collapse;width:100%;min-width:560px}.guide-content th,.guide-content td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top}.guide-content th{background:#f1f5fb}.guide-content .table-wrap{overflow:auto}.footer{padding:0 20px 34px;color:var(--muted);font-size:14px}@media(max-width:760px){.steps,.profiles,.faq{grid-template-columns:1fr}.hero{padding-top:42px}.panel{padding:22px}}
+</style>
+</head>
+<body>
+<header class="hero"><div class="hero-inner"><div class="eyebrow">LUMIN · IPSKILL</div><h1>一键安装，马上开始</h1><p>下载后双击安装程序，选择需要的能力，连续点击“下一步”即可完成。普通用户不需要解压文件、不需要打开 PowerShell，也不需要记安装命令。</p><div class="actions"><a class="btn btn-primary" href="Lumin-ipskill-Setup-v2.8.0.exe" download>下载一键安装程序 · v2.8.0</a><a class="btn btn-ghost" href="#guide">查看完整教程</a></div></div></header>
+<main class="main">
+<section class="panel"><h2>三步完成安装</h2><p class="sub">安装程序会自动解压、检查环境并写入本机 Codex。</p><div class="steps"><div class="step"><b><span class="num">1</span>下载</b><p>点击上方按钮，保存安装程序。</p></div><div class="step"><b><span class="num">2</span>选择</b><p>双击打开，勾选 AVG、CLI、配音或点餐能力。</p></div><div class="step"><b><span class="num">3</span>完成</b><p>连续点击“下一步”，最后点击“完成”。</p></div></div><div class="tip"><strong>推荐：</strong>普通用户先选择 AVG；需要飞书完整能力时再勾选 CLI。之后重新运行安装程序即可添加其他能力。</div></section>
+<section class="panel"><h2>选择你需要的能力</h2><p class="sub">多个能力可以同时安装，重复的基础组件会自动去重。</p><div class="profiles"><div class="profile"><strong>AVG</strong><p>AVG、NPC、任务和 Unity 配置。</p></div><div class="profile"><strong>CLI</strong><p>飞书文档、表格、消息、日历等完整能力。</p></div><div class="profile"><strong>VOICE</strong><p>Lumin 配音需求表生成与审计。</p></div><div class="profile"><strong>FOOD</strong><p>竹笋点餐提醒能力。</p></div></div></section>
+<section class="panel"><h2>安装后怎么用</h2><p class="sub">安装完成后直接告诉 Codex 你要做什么，不需要手动点名 Skill。</p><div class="faq"><details open><summary>我应该怎么开始？</summary><p>例如：“把这个飞书台本生成传统 AVG，并校验当前项目的编译能力。”</p></details><details><summary>以后怎么检查更新？</summary><p>直接对 Codex 说“检查 ipskill 更新”。需要真正更新时再说“同步 ipskill 更新”。</p></details><details><summary>安装会污染工程目录吗？</summary><p>不会。Skill 安装到本机 Codex 的全局目录，可跨工程使用。</p></details><details><summary>网页里包含什么？</summary><p>公开包包含 AVG、CLI、VOICE、FOOD 四个 Profile；内部 Profile 和离线知识库不随包分发。</p></details></div></section>
+<section id="guide" class="panel guide"><details><summary>打开完整教程（来自飞书文档）</summary><div class="guide-content"><h2>完整教程</h2><p>&gt; <strong>公开下载说明</strong>：本页面下载的是公开包，包含 <code>cli</code>、<code>avg</code>、<code>voice</code>、<code>food</code> 四个 Profile。官方源中的内部 <code>text</code> Profile 和离线知识库不随公开包分发。以下教程保留官方文档原文，涉及内部 Profile 的内容仅供有权限的内部环境参考。</p>
+<p>ipskill 是面向 Lumin 团队的 Codex Skill 官方发布包。团队通过 SVN 获取统一版本，再由 Codex 或根目录的 <code>install.cmd</code> 安装到本机；安装后可跨工程调用，同时将官方能力、个人经验和对话学习严格隔离。</p>
+<div class="callout"><p><strong>先记住这四点：</strong>普通成员使用 <code>consumer</code>；新机器优先运行 <code>install.cmd</code>；日常直接描述任务；真正安装、覆盖或同步必须由用户明确触发。</p></div>
+<h1>一、安装</h1>
+<h2>1. 安装前准备</h2>
+<ol>
+<li>安装并登录 Codex。</li>
+<li>通过 SVN 将 ipskill 官方发布源拉取到本机任意目录。</li>
+<li>确认需要安装的 Profile。可以一次选择一个或多个。</li>
+<li>普通使用者统一选择 <code>consumer</code> 角色。</li>
+<li>部署飞书CLI，部署指南<a href="https://open.feishu.cn/document/no_class/mcp-archive/feishu-cli-installation-guide.md" target="_blank" rel="noopener">飞书 CLI 能力介绍与最佳实践</a>，指令（复制给AI）：帮我安装飞书 CLI：https://open.feishu.cn/document/no_class/mcp-archive/feishu-cli-installation-guide.md</li>
+</ol>
+<h2>2. 选择 Profile</h2>
+<div class="table-wrap"><table><thead><tr><th>Profile</th><th>业务 Skill 数</th><th>适用人群与用途</th></tr></thead><tbody>
+<tr><td><code>cli</code></td><td>28</td><td>飞书文档、表格、知识库、消息、日历、任务、会议、审批、应用开发、组合工作流，以及 Lumin Unity 统一控制路由。</td></tr>
+<tr><td><code>avg</code></td><td>15</td><td>Lumin AVG/Aside/NPC 配置、IP 组打表、当前编译器探测、Unity 控制路由、资源映射、源表分支增量同步，以及所需的飞书读取和文本安全能力。</td></tr>
+<tr><td><code>voice</code></td><td>5</td><td>Lumin 配音需求表生成、更新与审计，以及所需的飞书表格、文本安全和 Unity 控制路由。</td></tr>
+<tr><td><code>food</code></td><td>1</td><td>Windows 本机竹笋点餐页面定时提醒。独立于 <code>cli</code>、<code>avg</code> 和 <code>voice</code>，安装后只发布能力，不自动创建计划任务。</td></tr>
+</tbody></table></div>
+<p>多个 Profile 会共享部分基础 Skill，因此数量不能直接相加。当前已验收的包版本为 <code>2.8.0</code>，共有 <strong>41 个唯一业务 Skill</strong>；每次安装还会附带 <code>ipskill-manager</code>，合计 <strong>42 个 Skill</strong>。当前共 5 个 Profile，其中 <code>food</code> 保持独立，不进入 <code>cli</code>、<code>avg</code> 或 <code>voice</code>。跨电脑实际可获得的版本始终以 SVN 中已经提交的内容为准。</p>
+<h2>3. 推荐：直接让 Codex 完成首次安装</h2>
+<p>把下面的话发给 Codex，并替换尖括号中的内容：</p>
+<pre><code class="lang-text">请使用我刚拉取的 ipskill 官方发布源：&lt;本机 SVN ipskill 目录&gt;。
+为我的本机 Codex 安装 &lt;cli / avg / voice / food，可多选&gt; profile，角色使用 consumer。
+安装到本机 CODEX_HOME/skills，不要安装进当前工程。
+同时建立我的个人 Skill 分区和全局隔离规范。
+请先校验源包并预览；没有冲突后执行安装，最后运行 doctor 验证，并登记 SVN 来源用于以后检查更新。</code></pre>
+<p>Codex 会依次完成源包校验、安装预览、实际安装、环境检查和安装记录登记。若发现同名 Skill 或本地冲突，应先报告，不会静默覆盖。</p>
+<h2>4. 可移植安装命令（手动执行）</h2>
+<p>在 ipskill 官方发布源根目录中执行。首次运行先预览；只有增加 <code>-Apply</code> 才会写入。<code>install.cmd</code> 会处理新机器常见的 PowerShell 执行策略，并调用同目录的安装脚本。</p>
+<pre><code class="lang-powershell">.\install.cmd -Profile avg
+.\install.cmd -Profile avg -Apply
+
+# 缺少正式 Python 3.9+ 时
+.\install.cmd -Profile avg -InstallPython -Apply
+
+# 按需准备 LuminWorkCLI Python 依赖
+.\install.cmd -Profile avg -LuminProject &quot;&lt;Lumin工程&gt;&quot; -InstallLuminDependencies -Apply
+
+# cli Profile 或画板渲染缺少 Node.js/npm/npx 时
+.\install.cmd -Profile cli -InstallNode -Apply
+
+# 只有需要直接读取飞书时才安装 lark-cli
+.\install.cmd -Profile avg -InstallLarkCli -Apply</code></pre>
+<p><strong>竹笋点餐提醒（<code>food</code> Profile）</strong>：先预览，确认后再安装。</p>
+<pre><code class="lang-powershell">.\install.cmd -Profile food
+.\install.cmd -Profile food -Apply</code></pre>
+<p>每台 Windows 电脑都需要分别安装 <code>food</code> Profile。安装只发布能力，不会自动创建或修改计划任务；只有用户在该电脑上明确提出创建或修改提醒后，Codex 才会配置本机任务。默认时间为周一至周五 <code>11:00</code>，使用 Windows 默认浏览器打开稳定点餐入口，不修改飞书功能，也不发送飞书消息。</p>
+<p>安装器会从参数、环境变量、<code>py</code>、PATH 和正式 Python 常见目录中发现运行时，不依赖固定盘符、用户名或 Codex 缓存；Node.js/npm/npx 也会通过统一入口发现并校验成套运行时。<code>-InstallPython</code>、<code>-InstallNode</code>、<code>-InstallLuminDependencies</code>、<code>-InstallLarkCli</code> 与 <code>-Apply</code> 都是显式写入开关；需要组合多个 Profile 时，建议直接让 Codex 按前一节的话术执行。</p>
+<h2>5. 仅负责人：本机 maintainer 授权</h2>
+<p><strong>普通使用者不要执行本节。</strong>默认角色永远是 <code>consumer</code>。只有负责维护官方发布源的人，才需要在自己的电脑上建立一次 maintainer 流程标记：</p>
+<pre><code class="lang-powershell">.\install.cmd -Profile avg -Role maintainer -AuthorizeMaintainer
+.\install.cmd -Profile avg -Role maintainer -AuthorizeMaintainer -Apply</code></pre>
+<p>该标记不保存账号、Token、密钥或 SVN 凭据。真正的 SVN 写权限仍由服务端 ACL 控制。</p>
+<h1>二、使用</h1>
+<h2>1. 日常使用：直接描述目标</h2>
+<p>安装后无需记命令，也无需手动点名 Skill。直接告诉 Codex 你要完成什么；当任务与某个 Skill 匹配时，Codex 会读取对应流程并执行。</p>
+<div class="table-wrap"><table><thead><tr><th>场景</th><th>示例说法</th></tr></thead><tbody>
+<tr><td>飞书</td><td>“把这个飞书文档按安装、使用、原理和 Skill 清单重新整理。”</td></tr>
+<tr><td>AVG</td><td>“把这个飞书台本生成传统 AVG，并校验当前项目的编译能力。”</td></tr>
+<tr><td>NPC</td><td>“生成 NPC 模式对白，并把 NPC 的摆放、显隐、交互入口和任务依赖绑定到对应 AVG。”</td></tr>
+<tr><td>配音</td><td>“根据这些台本生成 Lumin 配音需求表，并检查对白 ID 和角色分页。”</td></tr>
+<tr><td>点餐提醒</td><td>“在这台电脑创建工作日 11:00 的竹笋点餐提醒；先预览配置，再安装计划任务。”</td></tr>
+<tr><td>更新管理</td><td>“检查 ipskill 是否有更新。”或“同步更新 ipskill。”</td></tr>
+</tbody></table></div>
+<h2>2. 检查更新</h2>
+<p>直接对 Codex 说“检查 ipskill 更新”。<code>ipskill-manager</code> 会从安装记录中自动读取 SVN 来源、已装 Profile、角色、安装 revision 和文件哈希，不需要每次重新提供路径。</p>
+<p>检查是只读操作。结果会说明远端是否有新 revision、本机受管副本是否有冲突，以及当前安装状态是否正常。</p>
+<h2>3. 同步更新</h2>
+<p>只有明确说“同步、更新、升级、执行”时，Codex 才会真正应用更新。标准流程为：</p>
+<ol>
+<li>先预览待更新内容。</li>
+<li>检查官方受管副本是否偏离安装哈希。</li>
+<li>检查 SVN 工作副本是否干净。</li>
+<li>执行 <code>svn update</code>。</li>
+<li>校验新版官方包。</li>
+<li>仅替换内容有变化的已安装 Skill，并在替换前备份。</li>
+<li>更新本机安装记录。</li>
+</ol>
+<p>命令等价于：</p>
+<pre><code class="lang-powershell">python &quot;&lt;ipskill-manager 目录&gt;/scripts/manage.py&quot; status
+python &quot;&lt;ipskill-manager 目录&gt;/scripts/manage.py&quot; sync
+python &quot;&lt;ipskill-manager 目录&gt;/scripts/manage.py&quot; sync --apply</code></pre>
+<p><strong>跨电脑更新。</strong>另一台电脑只执行 <code>svn update</code>，不会自动改写已经安装在 <code>CODEX_HOME/skills</code> 的旧 Skill；拉到新的已提交 revision 后，还要明确执行“同步 ipskill 更新”或 <code>sync --apply</code>。旧版 <code>ipskill-manager</code> 可以完成管理器自升级、变化项备份和已登记旧官方 Skill 的安全迁移；尚未提交到 SVN 的 maintainer 本地修改不会传播到其他电脑。</p>
+<h2>4. 周期检查</h2>
+<p>可以让 Codex 创建每周一次的更新检查。周期任务只运行只读的 <code>status</code>；只有发现更新、冲突或检查失败时才通知。周期任务不应自动执行 <code>sync --apply</code>。</p>
+<h2>5. 复杂 Skill 的能力预检</h2>
+<p>部分 AVG、NPC、配音或飞书任务依赖外部程序、登录态、工程资源或用户授权。执行前的预检结果分为：</p>
+<div class="table-wrap"><table><thead><tr><th>状态</th><th>含义</th></tr></thead><tbody>
+<tr><td><code>READY</code></td><td>必需能力齐全，可以按标准流程执行。</td></tr>
+<tr><td><code>LIMITED</code></td><td>部分能力缺失，但有明确、安全的降级方案；已有 AVG 目标尚未取得本次覆盖授权时，也会停在此状态。</td></tr>
+<tr><td><code>BLOCKED</code></td><td>连降级模式也不可用，需要先补齐依赖。</td></tr>
+<tr><td><code>UNSAFE</code></td><td>目标路径越出工程、触发硬性安全门禁或存在其他不可安全降级的问题，禁止写入。</td></tr>
+</tbody></table></div>
+<h1>三、注意事项和原理</h1>
+<h2>1. 三个隔离分区</h2>
+<div class="table-wrap"><table><thead><tr><th>分区</th><th>典型位置</th><th>用途与修改边界</th></tr></thead><tbody>
+<tr><td>官方 SVN 工作副本</td><td><code>&lt;SVN 拉取目录&gt;/ipskill</code></td><td>官方发布源和更新源。consumer 只读；maintainer 也只有在用户明确要求维护官方源时才能修改。</td></tr>
+<tr><td>官方受管副本</td><td><code>CODEX_HOME/skills</code></td><td>供 Codex 发现和运行官方 Skill。由安装器维护，不承接个人偏好、训练或对话学习。</td></tr>
+<tr><td>个人 Skill 区</td><td><code>~/.agents/skills</code></td><td>存放个人沉淀，名称使用 <code>personal-&lt;owner&gt;-</code> 前缀，不参与官方更新、备份或覆盖。</td></tr>
+</tbody></table></div>
+<h2>2. 工作原理</h2>
+<p>首次安装会把所选 Profile 对应的 Skill 复制到本机 Codex 的全局 Skill 目录，同时写入安装记录和全局隔离规范。安装记录包含 SVN 来源、角色、个人分区、Profile、revision、已安装 Skill 及其哈希。</p>
+<p>由于安装目标属于本机 Codex，而不是某个 Unity 工程，所以同一台电脑上的不同工程都可以发现这些 Skill。真正执行任务时，工程代码、Unity 资源、飞书账号与业务数据仍由当前环境提供。</p>
+<p>在同时包含 <code>Assets/</code> 与 <code>Tools/LuminWorkCLI/luminworkcli.py</code> 的完整 Lumin 工程中，统一控制顺序为 <strong>Editor MCP → Unity CLI/Pipeline → GUI</strong>。项目内 Skill 可以补充工程约束，但不能反转该顺序；只要 Editor MCP 已可用且能力足够，缺少独立 <code>unity</code> 命令就不构成阻断。</p>
+<h2>3. consumer 与 maintainer 的边界</h2>
+<ul>
+<li><code>consumer</code>：使用官方受管副本，不修改官方 SVN 工作副本，也不修改官方受管副本。</li>
+<li><code>maintainer</code>：运行和维护官方 Skill 时以源码工作副本为权威；修改只落在源码，校验后再同步受管副本。</li>
+<li>无论哪种角色，普通对话中的“记住、学习、训练、以后这样做”都只能进入个人记忆或个人 Skill 区。</li>
+<li>个人经验不能自动提升为官方规则。标准流程是：个人草稿 → 差异审计 → 负责人审核 → 官方源修改 → 校验 → 负责人手工提交 SVN。</li>
+</ul>
+<h2>4. 冲突、备份与覆盖</h2>
+<p><strong>Lumin 同名隔离。</strong>官方 IP 组打表 Skill 使用唯一名称 <code>ipskill-lumin-table-build</code>，工程内面向整个项目的 <code>lumin-table-build</code> 保持不变，两者分层并存。旧官方副本只有在安装记录已登记且当前哈希匹配时才会先备份再退役；项目 Skill、个人 Skill、被修改的旧副本或未登记目录都不会被迁移删除。</p>
+<ul>
+<li>安装和同步默认先预览；没有明确执行指令时不写入。</li>
+<li>官方受管副本偏离上次安装哈希时，同步会停止，不会静默覆盖。</li>
+<li>SVN 工作副本存在本地修改或未版本化文件时，同步会停止。</li>
+<li>需要替换内容不同的同名 Skill 时，应先列出冲突与备份方案，再由用户明确授权。</li>
+<li>个人 Skill 不得与官方 Skill 同名覆盖。</li>
+</ul>
+<h2>5. 权限与安全边界</h2>
+<p><code>maintainer-authorization.json</code> 只是本机流程角色标记，不是安全凭据。真正防止普通账号提交官方源，必须依靠 SVN 服务端 ACL：普通账号只读，负责人账号才有写权限。</p>
+<p>安装记录和负责人标记不保存账号、Token、密钥或 SVN 凭据。任何能力预检参数都只能记录已确认的环境事实，不能绕过用户授权、安全确认或目标存在性检查。</p>
+<h2>6. 外部依赖并不会随 Skill 一起提供</h2>
+<p>Skill 描述的是工作流程和操作规则，不等于自动附带所有工具与数据。根目录 <code>install.cmd</code> 可以在显式开关下准备正式 Python、官方 Node.js/npm/npx、LuminWorkCLI Python 依赖和 <code>lark-cli</code>；飞书登录与业务权限、Lumin 工程、Unity Editor/MCP、资源表、台本和业务资源仍由使用者或目标工程提供。</p>
+<h2>7. 常见问题</h2>
+<div class="table-wrap"><table><thead><tr><th>问题</th><th>答案</th></tr></thead><tbody>
+<tr><td>每个工程都要重新安装吗？</td><td>不需要。默认安装到本机 Codex 的全局 Skill 目录，可跨工程使用。</td></tr>
+<tr><td>可以同时安装多个 Profile 吗？</td><td>可以。重复的基础 Skill 会自动去重，建议直接让 Codex 组合安装。</td></tr>
+<tr><td>新机器缺少 Python 或 lark-cli 怎么办？</td><td>从官方源根目录运行 <code>install.cmd</code>，按需增加 <code>-InstallPython</code>、<code>-InstallNode</code>、<code>-InstallLuminDependencies</code> 或 <code>-InstallLarkCli</code>。所有安装动作都必须显式增加对应开关与 <code>-Apply</code>。</td></tr>
+<tr><td>已有 AVG 占位 asset/prefab 可以覆盖吗？</td><td>可以。先列出完整目标并取得本次授权，再使用 <code>--overwrite-existing</code>；当前生成器会保留 GUID，并在写入前备份 asset、prefab 和 <code>.meta</code>，失败时回滚。目录、越界路径或异常资源类型仍会被拦截。</td></tr>
+<tr><td>正式 AVG 会生成到哪个目录？</td><td>必须按内容归属选择 <code>Assets/Res/Dialogue/AVG</code> 下已有的业务分类目录，并参考同章节、同剧情线及相邻 ID 的已落地资源；不能按播放模式机械分类，也不能把 <code>IPFlowGenerated</code> 当成正式交付目录。没有唯一匹配时，Codex 应列出候选依据，并先确认是否新建同级目录。</td></tr>
+<tr><td>NPC 模式由哪个 Skill 负责？</td><td><code>avg-config-expert</code> 负责 NPC 模式对白、<code>dialogueNPCAVG</code>、<code>dialogueStoryGroup</code> 及 AVG asset/prefab；<code>npc-config-expert</code> 负责 NPC 本体、摆放、显隐、交互入口、任务入口和全局注册。两者通过 story group、timeline 或 mission ID 做引用校验，不重复写入对方拥有的配置。</td></tr>
+<tr><td>检查更新会改文件吗？</td><td>不会。检查是只读操作，真正同步必须明确触发。</td></tr>
+<tr><td>个人训练会污染官方 Skill 吗？</td><td>不会。个人沉淀进入独立个人区，并使用专属名称前缀。</td></tr>
+<tr><td>本机 maintainer 标记等于 SVN 写权限吗？</td><td>不等于。真正写权限由 SVN 服务端 ACL 决定。</td></tr>
+<tr><td>发现同名或本地改动怎么办？</td><td>安装或同步会停止并报告冲突；确认备份与替换方案后再继续。</td></tr>
+</tbody></table></div>
+<h1>四、全部 Skill 分类与介绍</h1>
+<p>以下按能力分类列出当前已验收包的全部内容，共 <strong>41 个唯一业务 Skill + 1 个管理 Skill</strong>。同一个 Skill 即使被多个 Profile 引用，也只介绍一次；其他电脑实际可用清单以 SVN 已提交版本为准。</p>
+<h2>A. 安装、治理与安全（3）</h2>
+<div class="table-wrap"><table><thead><tr><th>Skill</th><th>用途</th></tr></thead><tbody>
+<tr><td><code>ipskill-manager</code></td><td>安装、检查和同步 ipskill，管理 Profile、安装记录、冲突检查，并隔离官方 Skill 与个人 Skill。</td></tr>
+<tr><td><code>lark-shared</code></td><td>处理 lark-cli 的安装检查、登录认证、身份选择、Scope 与权限问题，是其他飞书 Skill 的公共基础。</td></tr>
+<tr><td><code>safe-text-transcoding</code></td><td>保护中文和混合文本在 PowerShell、文件及飞书 API 之间传递时不乱码，并提供写前检查与修复流程。</td></tr>
+</tbody></table></div>
+<h2>B. Lumin 内容与工程（10）</h2>
+<div class="table-wrap"><table><thead><tr><th>Skill</th><th>用途</th></tr></thead><tbody>
+<tr><td><code>avg-config-expert</code></td><td>负责传统、现代、任务和 NPC 模式 AVG 的完整配置链路：把 IP 创意、飞书或 Excel 台本、任务对白及修改需求转成可校验的演出设计，更新源表、静态数据和 Unity AVG 资源。正式资源按内容归属写入现有业务分类目录，不使用 <code>IPFlowGenerated</code> 作为交付目录；分类不明确时先确认。</td></tr>
+<tr><td><code>aside-config-expert</code></td><td>按实时命名空间规划、写入和验证 Lumin Aside 组表与句表，支持覆盖、删除、备份、原子回滚和精确回读。</td></tr>
+<tr><td><code>npc-config-expert</code></td><td>负责 NPC 身份、摆放、显隐、交互入口、任务/AVG 绑定和全局注册；只处理 NPC 侧承载与联动，NPC 模式对白及 AVG asset/prefab 仍由 <code>avg-config-expert</code> 负责。</td></tr>
+<tr><td><code>current-avg-compiler</code></td><td>以当前 Lumin 仓库中的 AVG direct generator 与 LuminWorkCLI 为实时权威，探测节点、版本和兼容性，并检查覆盖授权、GUID 保留与备份回滚能力。</td></tr>
+<tr><td><code>ipskill-lumin-table-build</code></td><td>面向 IP 组处理本地临时打表、Unity 本地化写入、Jenkins 正式打表、Database 更新及相关验收；与工程内面向全项目的 <code>lumin-table-build</code> 分层并存。</td></tr>
+<tr><td><code>sync-lumin-table-branches</code></td><td>在用户明确要求时，把指定源表变更按增量同步到另一数据分支；保留目标分支专属内容，不整表覆盖，也不自动提交 SVN。</td></tr>
+<tr><td><code>lumin-unity-control-router</code></td><td>统一 Lumin Unity 操作路由：优先使用项目原生 Editor MCP，其次 Unity CLI/Pipeline，最后才使用 GUI。</td></tr>
+<tr><td><code>dialogue-id-namer</code></td><td>根据文件名、章节信息和对白类型，生成符合项目规范的对话组 ID。</td></tr>
+<tr><td><code>game-image-resource-id-mapper</code></td><td>按图素中文名或资源 path 实时查询当前 Lumin 图素配置 ID。</td></tr>
+<tr><td><code>game-resource-id-mapper</code></td><td>按资源中文名、path 或配置 ID 实时查询当前 Lumin 背景、CG、Spine 演出图和互动图素。</td></tr>
+</tbody></table></div>
+<h2>C. Lumin 配音（1）</h2>
+<div class="table-wrap"><table><thead><tr><th>Skill</th><th>用途</th></tr></thead><tbody>
+<tr><td><code>lumin-voice-demand-workbook</code></td><td>生成、更新和审计 Lumin 配音需求表，处理角色分页、对白与语音 ID、Aside、FMOD 等标准字段。</td></tr>
+</tbody></table></div>
+<h2>D. 文档、知识与数据内容（9）</h2>
+<div class="table-wrap"><table><thead><tr><th>Skill</th><th>用途</th></tr></thead><tbody>
+<tr><td><code>green-dream-text-audit</code></td><td>在独立隔离工作区中，基于随包离线知识库核对绿梦世界观、玩家可见包装、术语、旧称、冲突与来源版本；默认只读，不处理 Unity、任务配置或一般飞书操作。</td></tr>
+<tr><td><code>lark-doc</code></td><td>读取、创建和编辑飞书 Docx 或 Wiki 文档，支持结构化内容、富文本和文档内资源块。</td></tr>
+<tr><td><code>lark-drive</code></td><td>管理飞书云空间中的文件与文件夹，包括上传、下载、创建、复制、移动、删除和元数据查询。</td></tr>
+<tr><td><code>lark-wiki</code></td><td>管理飞书知识空间、成员和 Wiki 节点，包括查询、创建、移动与层级整理。</td></tr>
+<tr><td><code>lark-sheets</code></td><td>创建和操作飞书电子表格，包括页签、行列、单元格、格式、公式、筛选和图表等。</td></tr>
+<tr><td><code>lark-base</code></td><td>操作飞书多维表格的表、字段、记录、视图、公式、表单、仪表盘、工作流和权限。</td></tr>
+<tr><td><code>lark-markdown</code></td><td>查看、创建、上传、编辑和比较飞书 Markdown 文件。</td></tr>
+<tr><td><code>lark-slides</code></td><td>创建和编辑飞书幻灯片，管理页面并读取或替换页面内容。</td></tr>
+<tr><td><code>lark-whiteboard</code></td><td>查询和编辑飞书画板，支持导出预览、SVG 或原始节点，并以 Mermaid、PlantUML、SVG 等格式更新内容。</td></tr>
+</tbody></table></div>
+<h2>E. 沟通与个人协作（8）</h2>
+<div class="table-wrap"><table><thead><tr><th>Skill</th><th>用途</th></tr></thead><tbody>
+<tr><td><code>lark-im</code></td><td>收发飞书消息、搜索聊天记录、管理群聊与成员，并处理图片和文件。</td></tr>
+<tr><td><code>lark-contact</code></td><td>在飞书通讯录中按姓名、邮箱或 open_id 查询人员、部门和联系方式。</td></tr>
+<tr><td><code>lark-calendar</code></td><td>管理日历、日程、参会人和会议室，查询忙闲并推荐可用时间。</td></tr>
+<tr><td><code>lark-task</code></td><td>管理飞书任务、清单和任务智能体，包括分配、拆分、更新状态及附件处理。</td></tr>
+<tr><td><code>lark-approval</code></td><td>查询和处理审批待办、已办与实例，查看审批定义并发起原生审批。</td></tr>
+<tr><td><code>lark-attendance</code></td><td>查询当前用户的飞书考勤打卡记录。</td></tr>
+<tr><td><code>lark-okr</code></td><td>管理 OKR 周期、目标、关键结果、对齐关系、量化指标和进展记录。</td></tr>
+<tr><td><code>lark-mail</code></td><td>查询、起草、发送、回复和转发飞书邮件，并管理草稿及附件。</td></tr>
+</tbody></table></div>
+<h2>F. 会议与音视频（4）</h2>
+<div class="table-wrap"><table><thead><tr><th>Skill</th><th>用途</th></tr></thead><tbody>
+<tr><td><code>lark-vc</code></td><td>搜索历史视频会议，读取会议总结、待办、章节、逐字稿和参会人快照。</td></tr>
+<tr><td><code>lark-vc-agent</code></td><td>让应用机器人加入或离开进行中的会议，读取会中事件并发送会中文本消息。</td></tr>
+<tr><td><code>lark-minutes</code></td><td>搜索和管理飞书妙记，读取或编辑产物、下载音视频，并处理标题、说话人和关键词。</td></tr>
+<tr><td><code>lark-note</code></td><td>在已知 note_id 时直接查询飞书会议纪要详情、展示类型、关联文档与统一内容。</td></tr>
+</tbody></table></div>
+<h2>G. 平台开发与扩展（4）</h2>
+<div class="table-wrap"><table><thead><tr><th>Skill</th><th>用途</th></tr></thead><tbody>
+<tr><td><code>lark-apps</code></td><td>开发和托管飞书妙搭应用，覆盖应用创建、本地全栈开发、云端生成迭代、设计与发布。</td></tr>
+<tr><td><code>lark-event</code></td><td>监听、订阅和消费飞书实时事件，用于事件驱动的自动化与集成。</td></tr>
+<tr><td><code>lark-openapi-explorer</code></td><td>从官方文档库探索尚未被 CLI 封装的飞书原生 OpenAPI，并辅助构造调用方案。</td></tr>
+<tr><td><code>lark-skill-maker</code></td><td>把飞书 API 操作封装成可复用的 lark-cli 自定义 Skill。</td></tr>
+</tbody></table></div>
+<h2>H. 组合工作流（2）</h2>
+<div class="table-wrap"><table><thead><tr><th>Skill</th><th>用途</th></tr></thead><tbody>
+<tr><td><code>lark-workflow-meeting-summary</code></td><td>汇总指定时间范围内的会议纪要，生成结构化会议回顾或周报。</td></tr>
+<tr><td><code>lark-workflow-standup-report</code></td><td>组合日历与任务数据，生成指定日期的日程、待办和站会摘要。</td></tr>
+</tbody></table></div>
+<h2>I. 本机辅助（1）</h2>
+<div class="table-wrap"><table><thead><tr><th>Skill</th><th>用途</th></tr></thead><tbody>
+<tr><td><code>zhusun-food-reminder</code></td><td>在 Windows 本机预览、创建、修改、查看、试运行或移除竹笋点餐页面的工作日定时提醒。默认周一至周五 11:00 使用系统默认浏览器打开稳定入口；不修改飞书功能，不发送飞书消息。</td></tr>
+</tbody></table></div>
+<p>---</p>
+<p>本文档按已完成本机验收的 ipskill v2.8.0 manifest、Profile 和 Skill 定义更新。正式跨电脑可用版本仍以 SVN 已提交内容为准；后续增删 Skill 时，应同步更新 Profile 数量、分类清单与发布状态。</p></div></details></section>
+</main>
+<footer class="footer">教程来源：<a href="https://zhuziplay.feishu.cn/docx/ADyjdxm3Ro2vsdxNG3wcxGponod?from=from_copylink" target="_blank" rel="noopener">飞书《Lumin ipskill 安装与使用教程》</a><br>当前页面和安装程序均为本地可部署版本。</footer>
+</body></html>
