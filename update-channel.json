@@ -1,0 +1,15 @@
+﻿{
+    "schema_version":  1,
+    "bundle_name":  "lumin-ipskill",
+    "version":  "2.8.0",
+    "source_revision":  35294,
+    "published_at":  "2026-09-11T07:52:06.1137023Z",
+    "page_url":  "https://yue233linkmon-svg.github.io/lumin-ipskill-installer/",
+    "download_url":  "https://yue233linkmon-svg.github.io/lumin-ipskill-installer/Lumin-ipskill-Setup-v2.8.0.exe",
+    "profiles":  [
+                     "cli",
+                     "avg",
+                     "voice",
+                     "food"
+                 ]
+}

@@ -3,7 +3,7 @@ Add-Type -AssemblyName PresentationCore
 Add-Type -AssemblyName WindowsBase
 
 $root = Split-Path -Parent $MyInvocation.MyCommand.Path
-$package = Join-Path $root 'lumin-ipskill-v2.8.0-public.zip'
+$package = Get-ChildItem -LiteralPath $root -Filter 'lumin-ipskill-v*-public.zip' -File | Select-Object -First 1
 if (-not (Test-Path -LiteralPath $package)) {
     [System.Windows.MessageBox]::Show('安装包内容不完整，请重新下载。','Lumin ipskill', 'OK', 'Error') | Out-Null
     exit 2
@@ -133,7 +133,7 @@ $next.Add_Click({
             $outFile = Join-Path $temp 'install.out.txt'
             $errFile = Join-Path $temp 'install.err.txt'
             $status.Text = '正在安装选中的 Profile…'
-            $proc = Start-Process -FilePath 'powershell.exe' -ArgumentList @('-NoLogo','-NoProfile','-ExecutionPolicy','Bypass','-File',('"'+$install+'"'),'-Profile',$profileArgs,'-Apply') -WorkingDirectory $installRoot -WindowStyle Hidden -Wait -PassThru -RedirectStandardOutput $outFile -RedirectStandardError $errFile
+            $proc = Start-Process -FilePath 'powershell.exe' -ArgumentList @('-NoLogo','-NoProfile','-ExecutionPolicy','Bypass','-File',('"'+$install+'"'),'-Profile',$profileArgs,'-InstallUpdateMonitor','-Apply') -WorkingDirectory $installRoot -WindowStyle Hidden -Wait -PassThru -RedirectStandardOutput $outFile -RedirectStandardError $errFile
             if($proc.ExitCode -ne 0){
                 $detail = (Get-Content -Raw -LiteralPath $errFile -ErrorAction SilentlyContinue)
                 if([string]::IsNullOrWhiteSpace($detail)){ $detail = (Get-Content -Raw -LiteralPath $outFile -ErrorAction SilentlyContinue) }
